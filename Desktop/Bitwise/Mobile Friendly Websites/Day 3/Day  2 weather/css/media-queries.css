@@ -1,0 +1,60 @@
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+  .daily {
+    height: 3rem;
+  }
+
+  .daily i {
+    font-size: 36px;
+    color: purple;
+  }
+  .temps {
+    flex-wrap: wrap;
+  }
+  .degree {
+    font-size: 14px;
+    height: 50%;
+  }
+  .pollen {
+    font-size: 14px;
+    height: 50%;
+  }
+
+  .footer {
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 601px) {
+  hr {
+    display: none;
+  }
+
+  .weekday {
+    padding: 10px;
+  }
+
+  .grid {
+    height: 15rem;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+  }
+
+  .grid__item {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .daily {
+    font-size: 14px;
+  }
+
+  .temps {
+    height: 100%;
+  }
+}

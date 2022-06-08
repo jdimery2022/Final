@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/weather-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Flexbox</title>title>
+  <body>    
+    <div class="container">
+      <nav>
+        <a href="/weather1.html"class="menu">HTML</a>
+        <a href="/weather2.html"class="menu">Flexbox</a>
+        <a href="/weather3.html"class="menu">Queries</a>
+
+        <div class="animation start-html">
+        </nav>
+      </div>
+      <div class="overview">
+        <div class="overview__panel space">
+          <div class="overview__panel--item half">
+            <h1>Vancouver, WA</h1>
+            <p id="demo"></p>
+
+            <script>
+            const d = new Date();
+            document.getElementById("demo").innerHTML = d;
+            </script>
+            <h3>Overcast</h3>
+          </div>
+          <div class="overview__panel--item half">
+            <img
+              src="/img/vancouver.jpg"
+              alt="Vancouver Washington"
+              class="responsive cover outline"
+            />
+          </div>
+        </div>
+        <div class="overview__panel space">
+          <div class="overview__panel--item">
+            <i class="wi wi-night-sleet"></i>
+            <div class="big degree">68&deg;</div>
+          </div>
+          <div class="overview__panel--item">
+            <p><strong>Precipitation:</strong> 100%</p>
+            <p><strong> Humidity: </strong> 97%</p>
+            <p><strong> Wind: </strong> 4mph SW</p>
+            <p><strong> Pollen Count: </strong> 36</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <hr />
+        <div class="grid__item">
+          <div class="daily weekday">Monday</div>
+          <div class="daily"><i class="wi wi-night-sleet"></i></div>
+          <div class="daily temps">
+            <div class="daily degree">68&deg;</div>
+            <div class="daily degree dim">39&deg;</div>
+          </div>
+          <div class="daily temps">
+            <div class="daily pollen dim">Pollen</div>
+            <div class="daily pollen dim">36</div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="grid__item">
+          <div class="daily weekday">Tuesday</div>
+          <div class="daily"><i class="wi wi-night-sleet"></i></div>
+          <div class="daily temps">
+            <div class="daily degree">68&deg;</div>
+            <div class="daily degree dim">39&deg;</div>
+          </div>
+          <div class="daily temps">
+            <div class="daily pollen dim">Pollen</div>
+            <div class="daily pollen dim">36</div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="grid__item">
+          <div class="daily weekday">Wednesday</div>
+          <div class="daily"><i class="wi wi-night-sleet"></i></div>
+          <div class="daily temps">
+            <div class="daily degree">68&deg;</div>
+            <div class="daily degree dim">39&deg;</div>
+          </div>
+          <div class="daily temps">
+            <div class="daily pollen dim">Pollen</div>
+            <div class="daily pollen dim">36</div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="grid__item">
+          <div class="daily weekday">Thursday</div>
+          <div class="daily"><i class="wi wi-night-sleet"></i></div>
+          <div class="daily temps">
+            <div class="daily degree">68&deg;</div>
+            <div class="daily degree dim">39&deg;</div>
+          </div>
+          <div class="daily temps">
+            <div class="daily pollen dim">Pollen</div>
+            <div class="daily pollen dim">36</div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="grid__item">
+          <div class="daily weekday">Friday</div>
+          <div class="daily"><i class="wi wi-night-sleet"></i></div>
+          <div class="daily temps">
+            <div class="daily degree">68&deg;</div>
+            <div class="daily degree dim">39&deg;</div>
+          </div>
+          <div class="daily temps">
+            <div class="daily pollen dim">Pollen</div>
+            <div class="daily pollen dim">36</div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="grid__item">
+          <div class="daily weekday">Saturday</div>
+          <div class="daily"><i class="wi wi-night-sleet"></i></div>
+          <div class="daily temps">
+            <div class="daily degree">68&deg;</div>
+            <div class="daily degree dim">39&deg;</div>
+          </div>
+          <div class="daily temps">
+            <div class="daily pollen dim">Pollen</div>
+            <div class="daily pollen dim">36</div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="grid__item">
+          <div class="daily weekday">Sunday</div>
+          <div class="daily"><i class="wi wi-night-sleet"></i></div>
+          <div class="daily temps">
+            <div class="daily degree">68&deg;</div>
+            <div class="daily degree dim">39&deg;</div>
+          </div>
+          <div class="daily temps">
+            <div class="daily pollen dim">Pollen</div>
+            <div class="daily pollen dim">36</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="copy">
+        Thanks to
+        <a target="_blank" href="https://unsplash.com/@seanbenesh"
+          >&nbsp;Sean&nbsp;Benesh&nbsp;</a
+        >
+        of Portland, OR for Vancouver photo
+      </p>
+    </div>
+  </body>
+</html>
