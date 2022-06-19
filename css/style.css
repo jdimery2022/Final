@@ -67,12 +67,13 @@ body {font-family: Arial, Helvetica, sans-serif}
 /* The navbar */
 .topnav {
   overflow: hidden;
+  float: right;
  
 }
 
 /* Navbar links */
 .topnav a {
-  float: left;
+  float: right;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -131,17 +132,17 @@ nav .menu{
 
 /* main styles */
 main {
-	margin-top: 5px;
+	margin-top: 0px;
 	color: white;
 	color:white;
 	float: left;
-	width: 65%;
+	width:45%;
 	border: 1px solid black;
 	height: 500px;
 }
 
 aside {
-	
+		/* fa fa icons  on enrollment registration page */
 	margin-top: 5px;
 	float: right;
 	width: 34.25%;
